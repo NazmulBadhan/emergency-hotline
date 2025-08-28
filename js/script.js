@@ -44,7 +44,7 @@ for (let button of callButtons) {
         const historyContainer = document.getElementById("history-container");
         const newHistory = document.createElement("div");
         newHistory.innerHTML = `
-                    <div class="flex justify-between items-center px-2 py-2 bg-[#fafafa] rounded-lg">
+                    <div class="flex justify-between items-center my-2 px-2 py-2 bg-[#fafafa] rounded-lg">
                         <div>
                             <h3 class="hind-madurai-normal font-bold">${callTitle}</h3>
                             <p>${callNumber}</p>
@@ -61,3 +61,37 @@ for (let button of callButtons) {
 const clearButton = document.getElementById("btn-clear").addEventListener("click", function() {
     const historyContainer = document.getElementById("history-container").innerHTML = "";
 });
+
+
+// challenges part
+// increase copy count
+const copyContainer = document.getElementById("copy-container");
+const copyButtons = document.getElementsByClassName("btn-copy");
+
+let copy = 0;
+for (let m = 0; m < copyButtons.length; m++) {
+    // console.log(button)
+    copyButtons[m].addEventListener("click", function() {
+        copy++;
+        copyContainer.innerText = copy;
+        console.log(copyContainer)
+
+    });
+};
+
+
+// copy to clipboard
+const copyButtons2 = document.querySelectorAll(".btn-copy");
+const copyTexts = document.querySelectorAll(".copy-text");
+
+for (let j = 0; j < copyButtons2.length; j++) {
+    copyButtons2[j].addEventListener("click", function() {
+        const text = copyTexts[j].textContent;
+
+        navigator.clipboard.writeText(text).then(function() {
+            alert("copied : " + text);
+        }).catch (function (err) {
+            console.log("Failed to copy:", err);
+        });
+    });
+};

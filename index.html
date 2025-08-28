@@ -19,12 +19,12 @@
             <nav class="flex justify-between w-11/12 mx-auto bg-white py-6">
                 <div class="flex items-center gap-3">
                     <img src="./assets/logo.png" alt="" class="w-12">
-                    <p class="font-black text-xl text-green-800">Emergency <br> Service</p>
+                    <p class="hind-madurai-normal font-black text-xl text-green-800">Emergency <br> Service</p>
                 </div>
                 <div class="flex flex-col md:flex-row justify-between gap-2">
-                    <span class="w-[120px] h-[48px] bg-green-100 flex justify-center items-center gap-2 rounded-[50px]"><span id="heart-container" class="font-black">0</span><img src="./assets/heart.png" alt="" class="w-6 h-6"></span>
-                    <span class="w-[120px] h-[48px] bg-green-100 flex justify-center items-center gap-2 rounded-[50px]"><span id="coin-container" class="font-black">100</span><img src="./assets/coin.png" alt="" class="w-6 h-6"></span>
-                    <button class="w-[120px] h-[48px] bg-green-600 text-white px-6 py-3 rounded-[50px]">2 Copy</button>
+                    <span class="w-[120px] h-[48px] bg-green-100 flex justify-center items-center gap-2 rounded-[50px]"><span id="heart-container" class="hind-madurai-normal font-black">0</span><img src="./assets/heart.png" alt="" class="w-6 h-6"></span>
+                    <span class="w-[120px] h-[48px] bg-green-100 flex justify-center items-center gap-2 rounded-[50px]"><span id="coin-container" class="hind-madurai-normal font-black">100</span><img src="./assets/coin.png" alt="" class="w-6 h-6"></span>
+                    <button class="w-[120px] h-[48px] bg-green-600 font-semibold text-white px-6 py-3 rounded-[50px]"><span id="copy-container" class="hind-madurai-normal mr-1">0</span> Copy</button>
                 </div>
             </nav>
         </section>
@@ -39,9 +39,9 @@
     </header>
 
     <main>
-        <section class="w-11/12 mx-auto grid md:grid-cols-12 grid-cols-1 gap-4 mb-[86px]">
+        <section class="w-11/12 mx-auto grid md:grid-cols-12 grid-cols-1 gap-4 pb-[86px]">
             <div class="cards md:col-span-9 grid md:grid-cols-3 grid-cols-1 gap-4">
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -51,16 +51,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">National Emergency</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">999</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">999</h2>
                         <p class="hind-madurai-normal w-[53px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">All</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/police.png" alt="" class="w-[60px] bg-[#DFEFFF] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -70,16 +70,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Police</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">999</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">999</h2>
                         <p class="hind-madurai-normal w-[79px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Police</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/fire-service.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -89,16 +89,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Fire Service</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">999</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">999</h2>
                         <p class="hind-madurai-normal w-14 bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Fire</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/ambulance.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -108,16 +108,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Ambulance</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">1994-999999</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">1994-999999</h2>
                         <p class="hind-madurai-normal w-[83px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Health</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -127,16 +127,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Women & Child</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">109</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">109</h2>
                         <p class="hind-madurai-normal w-[68px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Help</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -146,16 +146,16 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Anti-Corruption</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">106</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">106</h2>
                         <p class="hind-madurai-normal w-[73px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Govt.</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
                         <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
@@ -165,18 +165,18 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Electricity Outage</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">16216</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">16216</h2>
                         <p class="hind-madurai-normal w-[109px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Electricity</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
-                        <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
+                        <img src="./assets/brac.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
                     </div>
                     <div class="mt-4">
@@ -184,18 +184,18 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Brac</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">16445</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">16445</h2>
                         <p class="hind-madurai-normal w-[69px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">NGO</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
                 </div>
-                <div class="card bg-white px-4 py-6 rounded-xl">
+                <div class="card bg-white px-4 py-6 rounded-xl shadow-md">
                     <div class="flex justify-between items-center md:gap-[180px]">
-                        <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
+                        <img src="./assets/Bangladesh-Railway.png" alt="" class="w-[60px] bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <i class="fa-regular fa-heart btn-heart"></i>
                     </div>
                     <div class="mt-4">
@@ -203,11 +203,11 @@
                         <p class="roboto-normal font-normal text-[14px] text-[#5C5C5C] title">Bangladesh Railway</p>
                     </div>
                     <div class="my-5">
-                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number">163</h2>
+                        <h2 class="roboto-normal font-bold text-2xl mb-[4px] number copy-text">163</h2>
                         <p class="hind-madurai-normal w-[79px] bg-[#F2F2F2] text-[#5C5C5C] py-2 px-4 rounded-full">Travel</p>
                     </div>
                     <div>
-                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px]"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
+                        <button class="btn roboto-normal rounded-lg w-[160px] md:w-[130px] btn-copy"><img src="./assets/copy.png" alt=""><span>Copy</span></button>
 
                         <button class="btn roboto-normal bg-green-600 rounded-lg text-white w-[160px] md:w-[130px] btn-call"><img src="./assets/call.png" alt=""><span>Call</span></button>
                     </div>
