@@ -23,9 +23,9 @@ for (let n = 0; n < callButtons.length; n++) {
         const number = card.querySelector(".number").innerText;
 
         if (coins >= 20) {
-            alert(`Calling ${title} ${number}...`);
             coins = coins - 20;
             coinContainer.innerText = coins;
+            alert(`📞 Calling ${title} ${number}...`);
         } else {
             alert("Not enough coins");
             return;
@@ -37,6 +37,7 @@ for (let n = 0; n < callButtons.length; n++) {
 // call history section functionality
 for (let button of callButtons) {
     button.addEventListener("click", function() {
+
         const callTitle = button.parentNode.parentNode.children[1].children[0].innerText;
         const callNumber = button.parentNode.parentNode.children[2].children[0].innerText;
         const callTime = new Date().toLocaleTimeString([]);
@@ -70,7 +71,6 @@ const copyButtons = document.getElementsByClassName("btn-copy");
 
 let copy = 0;
 for (let m = 0; m < copyButtons.length; m++) {
-    // console.log(button)
     copyButtons[m].addEventListener("click", function() {
         copy++;
         copyContainer.innerText = copy;
@@ -89,9 +89,12 @@ for (let j = 0; j < copyButtons2.length; j++) {
         const text = copyTexts[j].textContent;
 
         navigator.clipboard.writeText(text).then(function() {
-            alert("copied : " + text);
+            alert("Copied : " + text);
         }).catch (function (err) {
             console.log("Failed to copy:", err);
         });
     });
 };
+
+
+// exact time of the call challenge shown with call history section
